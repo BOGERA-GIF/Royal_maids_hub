@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <link rel="icon" type="img/x-icon" href="{% static 'images/favicon (1).ico' static%} ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <head>
+        
+    </head>
+</body>
+</html>
+    <title>ROYAL MAIDS HUB</title>
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16"> -->
+      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+    </svg> 
+  
+</head>
+<body>
+	<div class="header">
+		<a  href="{% url 'index' %}" ><img src="{% static 'images/Royal_Maids_Hubjpg-31-removebg-preview.png' static%} " alt="logo" class="logo"></a>
+		<div class="header-right">
+		  <ul class="social-iconsheader">
+			<li><a href="(https://www.facebook.com)" target="_blank"><i class="fab fa-facebook-f" style="color: white; margin-right: 19px;"></i></a></li>
+			<li><a href="(https://www.twitter.com)" target="_blank"><i class="fab fa-twitter" style="color: white; margin-right: 19px;"></i></a></li>
+			<li><a href="(https://www.instagram.com)" target="_blank"><i class="fab fa-instagram" style="color: white;margin-right: 17px;"></i></a></li>
+			<li><a href="(https://www.linkedin.com)" target="_blank"><i class="fab fa-linkedin-in" style="color: white; margin-right: 15px;"></i></a></li>
+			<li><a href="(https://www.youtube.com)" target="_blank"><i class="fab fa-youtube" style="color: white;margin-right: 9px;"></i></a></li>
+		  </ul>
+		  <p><a href="mailto:royalmaidshub@gmail.com" style="color: goldenrod;">info@royalmaidshub@gmail.com</a></p>
+		</div>
+	  </div>
+	  
+
+<div class="topnav">
+  <a href="{% url 'index' %}">HOME</a>
+  <a href="{% url 'about_view' %}">ABOUT </a>
+  <a href="{% url 'services' %}">SERVICES</a>
+  <a href="{% url 'booking' %}">BOOKING</a>
+  <a href="{% url 'application' %}">APPLICATION</a>
+  <a href="{% url 'contact' %}">CONTACT</a>
+  
+</div>
+<div>
+  <img src="{% static 'images/apply image.PNG' static%} " style=filter:brightness(0.5) class="full-width-image">
+  <span class="text7" style="font-size: 100px;">Application</span>
+</div>
+
+
+
+
+<h1 style=" font-family: Inria Sans; text-transform: uppercase; font-size: 27px; font-weight: 1000; color: purple; "> Maids Academy Admission Form</h1>
+<form>
+	<h2 style="font-family: Inria Sans; text-transform: uppercase; font-size:19px ; font-weight: 700; color: purple; text-align: center;">Personal Information</h2>
+	
+	<div class="form-group">
+		<label for="fullname" class="label">
+			Enter Full Name:
+			<input type="text" id="fullname" name="fullname" class="form-control">
+			<div class="underline"></div>
+		</label>
+	</div>
+	
+	<div class="form-group">
+		<label for="dob" class="label">
+			Enter Date of Birth:
+			<input type="date" id="dob" name="dob" class="form-control">
+			<div class="underline"></div>
+		</label>
+	</div>
+	
+	<div class="form-group">
+		<label for="gender" class="label">
+			Gender:
+			<input type="radio" style="position: relative;margin-left: -370px; bottom: -25px;" id="male" name="gender" value="male" class="radio">
+			<label for="male" class="radio-label" style=" margin-left: 28px;">Male</label>
+			<input type="radio" style="position: relative;margin-left: -310px; bottom: -25px;" id="female" name="gender" value="female" class="radio">
+			<label for="female" class="radio-label" style="margin-left:28px ;">Female</label>
+			<div class="underline"></div>
+		</label>
+	</div>
+	
+	<div class="form-group">
+		<label for="nationality" class="label">
+			Enter Nationality:
+			<input type="text" id="nationality" name="nationality" class="form-control">
+			<div class="underline"></div>
+		</label>
+	</div>
+	
+	<div class="form-group">
+		<label for="address" class="label">
+			Enter Home Address:
+			<textarea id="address" name="address" class="form-control"></textarea>
+			<div class="underline"></div>
+		</label>
+	</div>
+	
+	<div class="form-group">
+		<label for="phone" class="label">
+			Enter Phone Number:
+			<input type="tel" id="phone" name="phone" class="form-control">
+			<div class="underline"></div>
+		</label>
+	</div>
+	
+	<div class="form-group">
+		<label for="email" class="label">
+			Enter Email Address:
+			<input type="email" id="email" name="email" class="form-control">
+			<div class="underline"></div>
+		</label>
+	</div>
+	
+	<!-- <input type="submit" value="Submit" class="submit-btn"> -->
+
+
+    <h2 style="font-family: Inria Sans; text-transform: uppercase; font-size:19px ; font-weight: 700; color: purple; text-align: center;">Educational Background</h2>
+	
+	<div class="form-group">
+		<label for="education" class="label">
+			<p style="font-family: Inria Sans; text-transform: capitalize; font-size:14px ; font-weight: 700; color: purple; text-align: start;">Education Level:</p>
+			<input type="radio" style="margin-left: -320px; position: relative ; bottom: -25px;" id="primary" name="education" value="primary">
+			<label for="primary" class="radio-label" style="margin-left: 18px;">Primary School</label>
+			<input type="radio" style="margin-left: -320px; position: relative ; bottom: -25px;" id="secondary" name="education" value="secondary">
+			<label for="secondary" class="radio-label" style="margin-left: 18px;">Secondary School</label>
+			<input type="radio" style="margin-left: -320px;position: relative ; bottom: -25px;" id="vocational" name="education" value="vocational">
+			<label for="vocational" class="radio-label" style="margin-left: 18px;">Vocational Training</label>
+			<input type="radio" style="margin-left: -320px;position: relative ; bottom: -25px;" style="margin-left: -320px;" id="other" name="education" value="other">
+			<label for="other" class="radio-label" style="margin-left: 18px;">Other (please specify)</label>
+			<input type="text" id="other-education" name="other-education" class="form-control">
+			<div class="underline"></div>
+		</label>
+	</div>
+	
+	<h2 style="font-family: Inria Sans; text-transform: uppercase; font-size:19px ; font-weight: 700; color: purple; text-align: center;">Work Experience</h2>
+	
+	<div class="form-group">
+		<label for="work-experience" class="label">
+			Have you had any work experience?
+			<input type="radio" style="position: relative;margin-left: -570px; bottom: -25px;" id="yes" name="work-experience" value="yes">
+			<label for="yes" class="radio-label" style=" margin-left: 28px;">Yes</label>
+			<input type="radio" style="position: relative;margin-left: -310px; bottom: -25px;" id="no" name="work-experience" value="no">
+			<label for="no" class="radio-label"  style="margin-left:28px ;">No</label>
+		</label>
+		
+		<h3>If Yes:</h3>
+		
+		<label for="work-experience-details" class="label">
+			Please provide details:
+			<textarea id="work-experience-details" name="work-experience-details" class="form-control"></textarea>
+		</label>
+	</div>
+
+
+			<h2 style="font-family: Inria Sans; text-transform: uppercase; font-size:19px ; font-weight: 700; color: purple; text-align: center;">Health Information</h2>
+	
+	<div class="form-group">
+		<label for="health-information" class="label">
+			Any medical conditions or allergies?
+			<input type="radio"style="position: relative;margin-left: -570px; bottom: -25px;" id="yes" name="health-information" value="yes">
+			<label for="yes" class="radio-label" style=" margin-left: 28px;">Yes</label>
+			<input type="radio" style="position: relative;margin-left: -310px; bottom: -25px;" id="no" name="health-information" value="no">
+			<label for="no" class="radio-label"style="margin-left:28px ;">No</label>
+		</label>
+		
+		<div class="health-information-details">
+			<label for="health-information-details" class="label">
+				If yes, please provide details:
+				<textarea id="health-information-details" name="health-information-details" class="form-control"></textarea>
+			</label>
+		</div>
+			
+		<h2 style="font-family: Inria Sans; text-transform: uppercase; font-size:19px ; font-weight: 700; color: purple; text-align: center;">Training Program Preference</h2>
+		
+		<div class="form-group">
+			<label for="education" class="label">
+				<p style="font-family: Inria Sans; text-transform: capitalize; font-size:14px ; font-weight: 700; color: purple; text-align: start;"> Level:</p>
+				<input type="radio" style="margin-left: -320px; position: relative ; bottom: -25px;" id="primary" name="education" value="primary">
+				<label for="primary" class="radio-label" style="margin-left: 18px;">Advanced-cooking</label>
+				<input type="radio" style="margin-left: -320px; position: relative ; bottom: -25px;" id="secondary" name="education" value="secondary">
+				<label for="secondary" class="radio-label" style="margin-left: 18px;">Nutrition</label>
+				<input type="radio" style="margin-left: -320px;position: relative ; bottom: -25px;" id="vocational" name="education" value="vocational">
+				<label for="vocational" class="radio-label" style="margin-left: 18px;">childcare-family-management</label>
+				<input type="radio" style="margin-left: -320px;position: relative ; bottom: -25px;" id="vocational" name="education" value="vocational">
+				<label for="vocational" class="radio-label" style="margin-left: 18px;">laundry</label>
+				<input type="radio" style="margin-left: -320px;position: relative ; bottom: -25px;" id="vocational" name="education" value="vocational">
+				<label for="vocational" class="radio-label" style="margin-left: 18px;">cleaning</label>
+				<input type="radio" style="margin-left: -320px;position: relative ; bottom: -25px;" id="vocational" name="education" value="vocational">
+				<label for="vocational" class="radio-label" style="margin-left: 18px;">gardening</label>
+			</label>
+		</div>
+		
+		
+		
+		<!-- <div class="form-group">
+			<label for="training-program" class="label">
+				Select the desired training program:
+			</label>
+			<div class="radio-container">
+				<label for="basic-home-care"  class="radio-label">
+					
+				</label>
+				<label for="advanced-cooking"  style="margin-left: -320px; position: relative ; bottom: -25px;">
+					<input type="radio" style="margin-left: 18px;" id="advanced-cooking" name="training-program" value="advanced-cooking">
+					Advanced Cooking
+					<br>
+				</label>
+				<label for="nutrition"  style="margin-left: -320px; position: relative ; bottom: -25px;" class="radio-label">
+					<input type="radio" style="margin-left: 18px;" id="nutrition" name="training-program" value="nutrition">
+					Nutrition
+					<br>
+				</label>
+				<label for="childcare-family-management" style="margin-left: -320px; position: relative ; bottom: -25px;" class="radio-label">
+					<input type="radio" style="margin-left: 18px;" id="childcare-family-management" name="training-program" value="childcare-family-management">
+					Childcare and Family Management
+					<br>
+				</label>
+				<label for="laundry" style="margin-left: -320px; position: relative ; bottom: -25px;" class="radio-label">
+					<input type="radio" style="margin-left: 18px;" id="laundry" name="training-program" value="laundry">
+					Laundry
+					<br>
+				</label>
+				<label for="cleaning"  style="margin-left: -320px; position: relative ; bottom: -25px;" class="radio-label">
+					<input type="radio"style="margin-left: 18px;" id="cleaning" name="training-program" value="cleaning">
+					Cleaning
+					<br>
+				</label>
+				<label for="gardening"  style="margin-left: -320px; position: relative ; bottom: -25px;" class="radio-label">
+					<input type="radio" style="margin-left: 18px;" id="gardening" name="training-program" value="gardening">
+					Gardening
+					<br>
+				</label>
+			</div>
+		</div> -->
+		
+		<h2>Emergency Contact</h2>
+
+<div class="form-group">
+	<label for="emergency-contact-person" class="label">
+		Emergency Contact Person:
+	</label>
+	<br>
+	<label for="full-name" class="label">
+		Full Name:
+		<input type="text" id="full-name" name="full-name">
+	</label>
+	<br>
+	<label for="relationship" class="label">
+		Relationship:
+		<input type="text" id="relationship" name="relationship">
+	</label>
+	<br>
+	<label for="phone-number" class="label">
+		Phone Number:
+		<input type="tel" id="phone-number" name="phone-number">
+		<!-- <label for="phone-number" class="label">
+			Phone Number:
+			<input type="tel" id="phone-number" name="phone-number">
+		</label> -->
+		
+		
+		<div class="declaration">
+			<p>Declaration:</p>
+			<p>I, <input type="text" id="declaration-name" name="declaration-name">, hereby declare that the information provided in this admission form is true and accurate to the best of my knowledge. I understand that any false information may result in the rejection of my application.</p>
+		</div>
+		
+<!-- 		
+		<label for="application-signature" class="label">
+			Application Signature:
+			<input type="text" id="application-signature" name="application-signature">
+		</label>
+		
+	
+		<label for="date" class="label">
+			Date:
+			<input type="date" id="date" name="date">
+		</label>
+		
+		<h3>**Office Use Only**</h3>
+		
+
+<div class="application-status">
+	<p>Application Status:</p>
+	<label for="approved" class="radio-label">
+		<input type="radio" id="approved" name="application-status" value="approved">
+		Approved
+	</label>
+	<label for="pending" class="radio-label">
+		<input type="radio" id="pending" name="application-status" value="pending">
+		Pending
+	</label>
+	<label for="rejected" class="radio-label">
+		<input type="radio" id="rejected" name="application-status" value="rejected">
+		Rejected
+	</label>
+</div>
+
+
+<div class="comments">
+	<p>Comments:</p>
+	<textarea id="comments" name="comments" rows="2" cols="50"></textarea>
+</div>
+
+
+<label for="admission-officer-signature" class="label">
+	Admission Officer's Signature:
+	<input type="text" id="admission-officer-signature" name="admission-officer-signature">
+</label>
+
+
+<label for="date" class="label">
+	Date:
+	<input type="date" id="date" name="date">
+
+		
+	</label>
+	
+</div> -->
+	</label>
+</div>
+
+		
+	
+	<input type="submit" value="Submit" class="submit-btn smaller-btn">
+</form>
+  </div>
+  
+  
+  <div class="footer">
+	<div class="logo-container">
+	  <img src="{% static 'images/Royal_Maids_Hubjpg-31-removebg-preview.png' static%}" alt="logo">
+	  <ul class="social-iconsfooter">
+		<li><a href="(https://www.facebook.com)" target="_blank"><i class="fab fa-facebook-f" style="color: white;"></i></a></li>
+		<li><a href="(https://www.twitter.com)" target="_blank"><i class="fab fa-twitter"style="color: white;"></i></a></li>
+		<li><a href="(https://www.instagram.com)" target="_blank"><i class="fab fa-instagram"style="color: white;"></i></a></li>
+		<li><a href="(https://www.linkedin.com)" target="_blank"><i class="fab fa-linkedin-in"style="color: white;"></i></a></li>
+		<li><a href="(https://www.youtube.com)" target="_blank"><i class="fab fa-youtube"style="color: white;"></i></a></li>
+	  </ul>
+	</div>
+	<div class="contact-info">
+	  <p>+256703173206</p>
+	  <p>info@royalmaidshub.org</p>
+	  <address>Edward-Mugalu Road, Mpererwe, Kampala</address>
+	  <p>&copy;royalmaidshub All rights reserved</p>
+	</div>
+	<div class="quick-links">
+	  <h3>Quick Links</h3>
+	  <ul>
+		<li><a href="index.html" style="color: goldenrod;">Home</a></li>
+		<li><a href="about.html"style="color: goldenrod;">About Us</a></li>
+		<li><a href="contact.html"style="color: goldenrod;">Contact Us</a></li>
+		<li><a href="services.html"style="color: goldenrod;">Services</a></li>
+		<li><a href="terms.html"style="color: goldenrod;">Terms and Conditions</a></li>
+		<li><a href="application.html"style="color: goldenrod;">Application</a></li>
+	  </ul>
+	</div>
+  </div>
+  
+  
+  
+  </body>
+  </html>
